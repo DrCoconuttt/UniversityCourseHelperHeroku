@@ -91,9 +91,9 @@ html, body {
 }
 
 .aboutIcon {
-  height: 35px;
-  width: 35px;
-  font-size: 35px;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
   background: radial-gradient(circle, black 30%, #4C7E66 30%);
   cursor: pointer;
 }
