@@ -25,7 +25,7 @@ db.connect(function(err) {
     console.log('Connected to the MySQL server.');
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("running");
 });
 
