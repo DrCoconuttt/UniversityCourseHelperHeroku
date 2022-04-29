@@ -91,7 +91,9 @@ const CourseInfo = () => {
                         rating_date: new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString().slice(0, 10),
                         username: null,
                         course_name: name
-                    })
+                    }).then(() => {
+                        window.location.reload();
+                    });
                 }
                 catch(err) {
                 }
@@ -104,7 +106,9 @@ const CourseInfo = () => {
                         rating_date: new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString().slice(0, 10),
                         username: localStorage.getItem("user"),
                         course_name: name
-                    })
+                    }).then(() => {
+                        window.location.reload();
+                    });
                 }
                 catch(err) {
                 }
@@ -139,7 +143,9 @@ const CourseInfo = () => {
                     score: scoreEdit,
                     comment: commentEdit,
                     rating_date: new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString().slice(0, 10),
-                })
+                }).then(() => {
+                    window.location.reload();
+                });
             }
             catch(err) {
             }
@@ -147,8 +153,9 @@ const CourseInfo = () => {
     }
 
     const deleteRating = async (id) => {
-        window.location.reload();
-        await Axios.delete(`http://localhost:3001/api/rating/${id}`)
+        await Axios.delete(`http://localhost:3001/api/rating/${id}`).then(() => {
+            window.location.reload();
+        });
     }
 
     const SaveRatingIdReport = (prop) => {
