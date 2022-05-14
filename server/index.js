@@ -5,25 +5,19 @@ const cors = require('cors')
 const app = express();
 const mysql = require("mysql")
 
-
-// Connect to the database
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'university_course_helper',
-})
+//Connect to database
+const db = mysql.createPool({
+    connectionLimit : 100,
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b823f8c362c6aa',
+    password: 'bf0273d3',
+    database: 'heroku_03c9f894c24a351',
+    debug: false
+});
 
 app.use(cors())
-app.use(express.json()) // For parsing application/json
+app.use(express.json()) // Used for parsing application/json
 app.use(bodyParser.urlencoded({extended: true})) // For parsing application/x-www-form-urlencoded
-
-db.connect(function(err) {
-    if (err) {
-      return console.error('error: ' + err.message);
-    }
-    console.log('Connected to the MySQL server.');
-});
 
 app.listen(process.env.PORT || 3001, () => {
     console.log("running");
