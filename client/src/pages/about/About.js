@@ -7,23 +7,24 @@ const About = () => {
             <h1 className = "centerText">
                 About
             </h1>
-            <div>
-            The University Course Helper is a unique database management system that was created with the intent of solving 
-            the following real-world problem encountered by university students. Course enrollment can be both a difficult and 
-            stressful task, given the number of options that exist and the necessity to meet degree requirements. 
-            A vast amount of information exists to assist with choosing which courses to enroll in, however, that information 
-            is spread across a number of different platforms. For instance, one would have to visit the: University of Calgary 
-            (UofC) Contacts page to obtain information about which professors are teaching certain courses and past course 
-            syllabi, the UofC Calendar to determine which courses need to be taken to satisfy degree requirements, 
-            and Rate My Professors to better understand what a professor’s teaching ability is like. In addition, some of these 
-            aforementioned platforms are obtusely laid out, and require one to click through an unnecessary amount of pages to 
-            find information for a single course. When pertinent information regarding courses is spread across a number of 
-            platforms, it results in the course enrollment process being both overwhelming and tedious. Thus, the University 
-            Course Helper was designed specifically to combat the limitations of the current method for obtaining course 
-            information. This database management system serves as a single consolidated platform that provides relevant 
-            information related to courses offered by the UofC, including information such as course relevancy to a certain 
-            degree, and previous syllabi of courses, thereby streamlining the process of selecting courses. 
-            </div>
+            <p>
+            Universities offer a massive ammount of courses. The information needed to make an informed decision on what courses
+            to take can be a difficult and time consuming. Information such as which courses are required for a certian degrees, which 
+            courses are pre requisites for future required courses, what the profs and syllabi past courses were and when certian courses are typpically taught are spread across several
+            different websites. In addition, some of these websites require are laid out in such a way where aquiring this information
+            unessicarly requires visiting several pages. Without this information a student could find themelves missing a course required for their
+            degree or missing a prerequisite or missing a course that is rairly offered, unescissarly delaying their degree. 
+            Another possiblity is for a student to find themselves in a course with a professor whose teaching style they do no click with
+            or a courses with requirements that are difficult to complete, such as enrolling several courses that have heavy group projects.
+            Or a student could miss out on a course they would have enjoyed because it is so time consuming to learn about what a course entails.
+            </p>
+
+            <p>
+            The University Course Helper solves this problem, allowing students to quickly and easily gather important
+            information on courses they can take to make. Students can also rate courses and
+            comment their thoughts or experiences courses, like Rate my Professor but with courses.
+            The University Course Helper allows students to make an informed decision on which courses to take, without the hastle
+            </p>
 
             <div className="githubIconAlign">
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/DrCoconuttt/UniversityCourseHelper" className="githubIcon" >
