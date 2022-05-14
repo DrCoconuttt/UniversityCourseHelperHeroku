@@ -7,7 +7,7 @@ A full-stack CRUD web application developed using React, Node.js, MySQL and expr
 ## To run locally
 1. cd server/
 2. npm install
-3. npm run dev
+3. npm start
 
 **split terminal**
 1. cd client/
