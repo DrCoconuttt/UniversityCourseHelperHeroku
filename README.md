@@ -1,7 +1,7 @@
 # UniversityCourseHelper
 
 ## Live Demo
-https://university-course-helper.netlify.app/
+https://university-course-helper-heroku.netlify.app/
 
 Note this version is likely not being hosted at the moment, for a working version please see:
 https://github.com/DrCoconuttt/UniversityCourseHelper/tree/main
